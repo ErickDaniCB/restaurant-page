@@ -1,1 +1,3 @@
-console.log('Hello, world!');
+import buttons from "./initial-page.js";
+
+buttons();
