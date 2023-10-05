@@ -10,23 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createAbout: () => (/* binding */ createAbout)\n/* harmony export */ });\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./src/index.js\");\n\n\n\nfunction createAbout() {\n  _index__WEBPACK_IMPORTED_MODULE_0__.space.innerHTML = \"\";\n  const h1 = document.createElement(\"h1\");\n  h1.textContent = \"About\";\n\n  _index__WEBPACK_IMPORTED_MODULE_0__.space.appendChild(h1);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createHome: () => (/* binding */ createHome)\n/* harmony export */ });\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./src/index.js\");\n\n\n\nfunction createHome() {\n  _index__WEBPACK_IMPORTED_MODULE_0__.space.innerHTML = \"\";\n  const h1 = document.createElement(\"h1\");\n  h1.textContent = \"Home\";\n\n  _index__WEBPACK_IMPORTED_MODULE_0__.space.appendChild(h1);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page.js */ \"./src/initial-page.js\");\n\n\n(0,_initial_page_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   space: () => (/* binding */ space)\n/* harmony export */ });\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\n\nconst content = document.querySelector(\"#content\");\nconst nav = document.createElement(\"div\");\ncontent.appendChild(nav);\nconst space = document.createElement(\"div\");\ncontent.appendChild(space);\n\nconst homeBtn = document.createElement(\"button\");\nconst menuBtn = document.createElement(\"button\");\nconst aboutBtn = document.createElement(\"button\");\n\nhomeBtn.textContent = \"Home\";\nhomeBtn.addEventListener(\"click\", _home__WEBPACK_IMPORTED_MODULE_1__.createHome);\nhomeBtn.setAttribute(\"id\", \"home-btn\");\n\nmenuBtn.textContent = \"Menu\";\nmenuBtn.addEventListener(\"click\", _menu__WEBPACK_IMPORTED_MODULE_2__.createMenu);\nmenuBtn.setAttribute(\"id\", \"menu-btn\");\n\naboutBtn.textContent = \"About\";\naboutBtn.addEventListener(\"click\", _about__WEBPACK_IMPORTED_MODULE_0__.createAbout);\naboutBtn.setAttribute(\"id\", \"about-btn\");\n\nnav.appendChild(homeBtn);\nnav.appendChild(menuBtn);\nnav.appendChild(aboutBtn);\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/initial-page.js":
-/*!*****************************!*\
-  !*** ./src/initial-page.js ***!
-  \*****************************/
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttons);\n\nfunction buttons() {\n  const content = document.querySelector(\"#content\");\n  \n  const homeBtn = document.createElement(\"button\");\n  const menuBtn = document.createElement(\"button\");\n  const aboutBtn = document.createElement(\"button\");\n  \n  homeBtn.textContent = \"Home\";\n  menuBtn.textContent = \"Menu\";\n  aboutBtn.textContent = \"About\";\n  \n  content.appendChild(homeBtn);\n  content.appendChild(menuBtn);\n  content.appendChild(aboutBtn);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/initial-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createMenu: () => (/* binding */ createMenu)\n/* harmony export */ });\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./src/index.js\");\n\n\n\nfunction createMenu() {\n  _index__WEBPACK_IMPORTED_MODULE_0__.space.innerHTML = \"\";\n  const h1 = document.createElement(\"h1\");\n  h1.textContent = \"Menu\";\n\n  _index__WEBPACK_IMPORTED_MODULE_0__.space.appendChild(h1);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
@@ -89,7 +109,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
