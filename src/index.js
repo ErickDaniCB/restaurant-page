@@ -1,12 +1,20 @@
 export { space };
+import './styles.css';
 import { createAbout } from "./about";
 import { createHome } from "./home";
 import { createMenu } from "./menu";
 
 const content = document.querySelector("#content");
+
+const title = document.createElement("h1");
+title.textContent = "Gar-nachas";
+
 const nav = document.createElement("div");
-content.appendChild(nav);
+
 const space = document.createElement("div");
+
+content.appendChild(title);
+content.appendChild(nav);
 content.appendChild(space);
 
 const homeBtn = document.createElement("button");
@@ -28,3 +36,5 @@ aboutBtn.setAttribute("id", "about-btn");
 nav.appendChild(homeBtn);
 nav.appendChild(menuBtn);
 nav.appendChild(aboutBtn);
+
+createHome();
